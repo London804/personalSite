@@ -6,7 +6,6 @@ exports.index = function(req, res) {
 };
 
 exports.portfolio =  function(req, res) {
-    res.send('@London804');
     res.render('portfolio', {
         title: 'Alex Chaparro',
         classname: 'portfolio'

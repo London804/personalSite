@@ -5,10 +5,42 @@
   margin: 0 auto;
 }
 //variables
-$background: #fafafa;
+$background: #fbfbfb;
 $font: Impact, Charcoal, sans-serif;
 
 body {
   background: $background;
   font-family: $font;
+}
+
+.container {
+  min-height:100%;
+  position:relative;
+  margin-top: 200px;
+}
+
+
+nav {
+  width: 100%;
+  border-top: 5px solid black;
+  position: absolute;
+  top: 0;
+  min-height: 50px;
+  z-index: 10;
+  a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 45px;
+    color: black;
+    &:hover span {
+      border-top: 5px solid black;
+      padding-top: 13px;
+    }
+  }
+}
+
+.portfolio {
+  .row {
+    margin-bottom: 50px;
+  }
 }

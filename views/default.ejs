@@ -4,13 +4,28 @@
     <% include partials/page/head.ejs%>
 </head>
 <body class="<%= classname%>">
+
+<% include partials/page/header.ejs%>
+
 <section class="container">
     <section class="row">
-        <div class="col-sm-12">
-            <h2 class="title">Let's Begin ...</h2>
+        <div class="col-sm-4 col-centered">
+            <div>
+                <h1 id="title">Alexander Chaparro</h1>
+                <h4 id="quote">"If today were the last day of your life, <br/>
+                    would you want to do what you are about to do today? <br/>
+                    <span>-Steve Jobs</span></h4>
+            </div>
+            <div id="contact">
+                <h5><a href="mailto:alexechaparro@gmail.com?subject=From your personal site">Alex.E.Chaparro@gmail.com</a></h5>
+                <h5><a target='_blank' href="https://twitter.com/London804">@London804</a></h5>
+                <h5><a target='_blank' href="http://github.com/london804">MyGitHub</a></h5>
+            </div>
         </div>
     </section>
+    <% include partials/page/footer.ejs%>
 </section>
+
 
 
 <% include partials/page/jsdefaults.ejs%>
