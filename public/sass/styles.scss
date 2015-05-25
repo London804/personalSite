@@ -8,17 +8,48 @@
 $background: #fbfbfb;
 $font: Impact, Charcoal, sans-serif;
 
+html, body, #container { height: 100%; }
 body {
   background: $background;
   font-family: $font;
 }
 
+body > #container { height: auto; min-height: 100%; }
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
 .container {
   min-height:100%;
   position:relative;
-  margin-top: 200px;
+  padding-bottom: 2em;
 }
 
+footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 2em;
+  margin-top: -2em;
+  #copy {
+    position: relative;
+    left: 10px;
+  }
+  span:nth-child(2) {
+    float: right;
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+    img {
+      width: 25px;
+    }
+  }
+}
 
 nav {
   width: 100%;
@@ -38,9 +69,23 @@ nav {
     }
   }
 }
+#content {
+  position: relative;
+  top: 200px;
+}
+
 
 .portfolio {
   .row {
+    &:first-child {
+      margin-top: 100px;
+    }
     margin-bottom: 50px;
+  }
+  #content-portfolio {
+    position: relative;
+    top: 100px;
+    min-height:100%;
+    padding-bottom: 2em;
   }
 }

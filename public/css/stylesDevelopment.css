@@ -6798,15 +6798,50 @@ button.close {
   margin: 0 auto;
 }
 
+html, body, #container {
+  height: 100%;
+}
+
 body {
   background: #fbfbfb;
   font-family: Impact, Charcoal, sans-serif;
 }
 
+body > #container {
+  height: auto;
+  min-height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   min-height: 100%;
   position: relative;
-  margin-top: 200px;
+  padding-bottom: 2em;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 2em;
+  margin-top: -2em;
+}
+footer #copy {
+  position: relative;
+  left: 10px;
+}
+footer span:nth-child(2) {
+  float: right;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+}
+footer span:nth-child(2) img {
+  width: 25px;
 }
 
 nav {
@@ -6828,8 +6863,22 @@ nav a:hover span {
   padding-top: 13px;
 }
 
+#content {
+  position: relative;
+  top: 200px;
+}
+
 .portfolio .row {
   margin-bottom: 50px;
+}
+.portfolio .row:first-child {
+  margin-top: 100px;
+}
+.portfolio #content-portfolio {
+  position: relative;
+  top: 100px;
+  min-height: 100%;
+  padding-bottom: 2em;
 }
 
 /*# sourceMappingURL=stylesDevelopment.css.map */
