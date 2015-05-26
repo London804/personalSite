@@ -6811,6 +6811,10 @@ button.close {
   margin: 0 auto;
 }
 
+html {
+  font-size: 1em;
+}
+
 html, body, #container {
   height: 100%;
 }
@@ -6823,10 +6827,12 @@ body {
 body ::selection {
   background: black;
   /* WebKit/Blink Browsers */
+  color: white;
 }
 body ::-moz-selection {
   background: black;
   /* Gecko Browsers */
+  color: white;
 }
 
 body > #container {
@@ -6881,6 +6887,8 @@ nav a:hover span {
   font-weight: 100;
   text-transform: uppercase;
   padding: 25px 0 35px 0;
+  max-width: 460px;
+  margin: 0 auto;
 }
 #quote span {
   display: block;
@@ -6890,6 +6898,10 @@ nav a:hover span {
 
 #contact {
   text-align: center;
+}
+#contact h5 {
+  font-size: 16px;
+  margin: 15px auto;
 }
 #contact a {
   color: black;
@@ -6912,6 +6924,9 @@ nav a:hover span {
   min-height: 100%;
   padding-bottom: 2em;
 }
+.portfolio .outline {
+  border: 1px solid black;
+}
 
 footer {
   clear: both;
@@ -6924,7 +6939,7 @@ footer {
 footer #copy {
   position: relative;
   left: 10px;
-  font-size: 10px;
+  font-size: 11px;
 }
 footer span:nth-child(2) {
   float: right;
@@ -6934,6 +6949,12 @@ footer span:nth-child(2) {
 }
 footer span:nth-child(2) img {
   width: 25px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=stylesDevelopment.css.map */
