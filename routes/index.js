@@ -1,5 +1,5 @@
 exports.index = function(req, res) {
-    res.render('default', {
+    res.render('index', {
         title: 'Alex Chaparro',
         classname: 'home'
     });
