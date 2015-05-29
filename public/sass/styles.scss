@@ -41,32 +41,46 @@ $fontProxima: "proxima-nova-condensed", sans-serif;
   }
 }
 
-html {
-  font-size: 1em;
+@mixin transition {
+  webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-html, body, #container { height: 100%; }
-body {
+@mixin filter {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+html {
   font-size: 16px;
+}
+html, body, #container { height: 100%; } //for footer
+body > #container { height: auto; min-height: 100%; } //for footer
+
+body {
   background: $background;
   font-family: $fontProxima;
   @include selection;
 }
-
-body > #container { height: auto; min-height: 100%; }
 
 a {
   &:hover {
     text-decoration: none;
     color: black;
   }
-
 }
 
 .container {
   min-height:100%;
   position:relative;
-  padding-bottom: 2em;
+  padding-bottom: 2em; //for footer
 }
 
 nav {
@@ -79,7 +93,7 @@ nav {
   background: white;
   a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 15px 45px;
     color: black;
     &:hover span {
@@ -96,11 +110,11 @@ nav {
 
 #title {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: $fontSans;
 }
 #quote {
-  color: rgb(170, 170, 170);
+  color: darken(#aaa, 15%);
   font-weight: 100;
   text-transform: uppercase;
   padding: 25px 0 35px 0;
@@ -116,7 +130,7 @@ nav {
 #contact {
   text-align: center;
   h5 {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 15px auto;
   }
   a {
@@ -125,17 +139,15 @@ nav {
 }
 
 #content {
-  position: relative;
-  top: 200px;
+  margin-top: 100px;
 }
-
 
 .portfolio {
   .row {
     &:first-child {
       margin-top: 100px;
     }
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   #content-portfolio {
     position: relative;
@@ -145,6 +157,9 @@ nav {
   }
   .outline {
     border: 1px solid black;
+    @include filter;
+    @include transition;
+
   }
 }
 
@@ -152,13 +167,13 @@ footer {
   clear: both;
   position: relative;
   z-index: 10;
-  height: 2em;
-  margin-top: -2em;
-  line-height: 2em;
+  height: 2em;  //for footer
+  margin-top: -2em; //for footer
+  line-height: 2em; //for footer
   #copy {
     position: relative;
     left: 10px;
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
   span:nth-child(2) {
     float: right;
@@ -172,9 +187,81 @@ footer {
 
 }
 
+//@keyframes highlight {
+//  0% {
+//    background: none;
+//  }
+//  20% {
+//    background: blue;
+//  }
+//  50% {
+//    background: red;
+//  }
+//  100% {
+//    background: green;
+//  }
+//}
+//
+//#highlight:hover {
+//  animation: highlight 3s;
+//}
+//
+//@mixin transition {
+//  -o-transition: 1.5s;
+//  -ms-transition: 1.5s;
+//  -moz-transition: 1.5s;
+//  -webkit-transition: 1.5s;
+//  transition: 1.5s;
+//}
+
+//a {
+//  color: red;
+//  font-weight: bold;
+//  &:hover {
+//    @include transition;
+//
+//    color: blue;
+//
+//  }
+//}
+
+//#box {
+//  width: 200px;
+//  height: 100px;
+//  background: red;
+//  @include transition; //put the transition on both the hover state and normal state to have a mouseEnter and mouseLeave effect
+//  &:hover {
+//    @include transition;
+//    background: blue;
+//    width: 300px;
+//    height: 100px;
+//  }
+//}
 
 @media (min-width: $screen-sm-min) {
-  body {
-    font-size: 14px;
+  #content {
+    margin-top: 200px;
   }
+
+  #quote {
+    color: #aaa;
+  }
+  .portfolio {
+    .row {
+      &:first-child {
+      }
+      margin-bottom: 50px;
+    }
+    #content-portfolio {
+
+    }
+    .outline {
+      @include filter;
+      @include transition;
+
+    }
+  }
+
+
+
 }

@@ -6812,15 +6812,19 @@ button.close {
 }
 
 html {
-  font-size: 1em;
+  font-size: 16px;
 }
 
 html, body, #container {
   height: 100%;
 }
 
+body > #container {
+  height: auto;
+  min-height: 100%;
+}
+
 body {
-  font-size: 16px;
   background: #fbfbfb;
   font-family: "proxima-nova-condensed", sans-serif;
 }
@@ -6833,11 +6837,6 @@ body ::-moz-selection {
   background: black;
   /* Gecko Browsers */
   color: white;
-}
-
-body > #container {
-  height: auto;
-  min-height: 100%;
 }
 
 a:hover {
@@ -6862,7 +6861,7 @@ nav {
 }
 nav a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 15px 45px;
   color: black;
 }
@@ -6878,12 +6877,12 @@ nav a:hover span {
 
 #title {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Open Sans", sans-serif;
 }
 
 #quote {
-  color: #aaaaaa;
+  color: #848484;
   font-weight: 100;
   text-transform: uppercase;
   padding: 25px 0 35px 0;
@@ -6900,7 +6899,7 @@ nav a:hover span {
   text-align: center;
 }
 #contact h5 {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 15px auto;
 }
 #contact a {
@@ -6908,12 +6907,11 @@ nav a:hover span {
 }
 
 #content {
-  position: relative;
-  top: 200px;
+  margin-top: 100px;
 }
 
 .portfolio .row {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .portfolio .row:first-child {
   margin-top: 100px;
@@ -6926,6 +6924,17 @@ nav a:hover span {
 }
 .portfolio .outline {
   border: 1px solid black;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.portfolio .outline:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 footer {
@@ -6939,7 +6948,7 @@ footer {
 footer #copy {
   position: relative;
   left: 10px;
-  font-size: 11px;
+  font-size: 0.6875rem;
 }
 footer span:nth-child(2) {
   float: right;
@@ -6952,8 +6961,29 @@ footer span:nth-child(2) img {
 }
 
 @media (min-width: 768px) {
-  body {
-    font-size: 14px;
+  #content {
+    margin-top: 200px;
+  }
+
+  #quote {
+    color: #aaa;
+  }
+
+  .portfolio .row {
+    margin-bottom: 50px;
+  }
+  .portfolio .outline {
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
+    webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .portfolio .outline:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
   }
 }
 

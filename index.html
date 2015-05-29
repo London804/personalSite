@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Framework Template</title>
+    <title>AlexeChaparro.com</title>
 
-    <!-- Bootstrap -->
-    <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
 
-    <link href="assets/css/stylesDevelopment.css" rel="stylesheet">
+    <link href="public/css/stylesDevelopment.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,22 +16,43 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="home">
+<header>
+    <nav>
+        <a href="/"><span id='home' class='border-top'>Home</span></a>
+        <a href="/portfolio.html"><span id='portfolio'>Portfolio</span></a>
+    </nav>
+</header>
 <section class="container">
     <section class="row">
-        <div class="col-sm-12">
-            <h2 class="title">Let's Begin ...</h2>
+        <div class="col-sm-8 col-md-6 col-centered">
+            <div id="content">
+                <h1 id="title">Alexander Chaparro</h1>
+                <h4 id="quote">&#8220;If today were the last day of your life,
+                    would you want to do what you are about to do today?&#8221;
+                    <span>-Steve Jobs</span></h4>
+
+                <div id="contact">
+                    <h5><a href="mailto:alexechaparro@gmail.com?subject=From your personal site">Alex.E.Chaparro@gmail.com</a></h5>
+                    <h5><a target='_blank' href="https://twitter.com/London804">@London804</a></h5>
+                    <h5><a target='_blank' href="http://github.com/london804">GitHub</a></h5>
+                </div>
+            </div>
         </div>
     </section>
 </section>
+<footer>
+    <span id="copy">&copy; 2015. Alexander Chaparro. All rights reserved.</span>
+    <span><a href="https://www.linkedin.com/pub/alexander-chaparro/1a/b58/566" target="_blank"><img src="public/img/linkedInLogo.png"></a></span>
+</footer>
 
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/scripts.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/scripts.js"></script>
 <script src="//localhost:35729/livereload.js"></script>
 
 </body>
