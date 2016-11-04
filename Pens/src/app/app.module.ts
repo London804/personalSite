@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent},
+      { path: '', component: HomeComponent},
       { path: 'portfolio', component: PortfolioComponent}
     ])
   ],
