@@ -1,0 +1,28 @@
+//mixins
+@mixin selection {
+  ::selection {
+    background: black; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: black; /* Gecko Browsers */
+    color:white;
+  }
+}
+
+@mixin transition {
+  webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@mixin filter {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
