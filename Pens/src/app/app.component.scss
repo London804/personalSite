@@ -28,10 +28,10 @@ nav {
 footer {
   display: flex;
   justify-content: space-between; 
-  padding: 0 0.625rem;
+  padding: 0 0.9375rem;
   z-index: 10;
   height: 2rem;  //for footer
-  margin-top: -2rem; //for footer
+  margin-top: -2.125rem; //for footer
   line-height: 2rem; //for footer
 
   span:nth-child(2) {
