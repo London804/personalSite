@@ -7,24 +7,38 @@
 .codePen{
     @include transition;
     @include filter;
-    display: flex;
-	flex-direction: column;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	color: $white;
 	border: 1px solid $black;
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 320px;
 
 	// img {
 	// 	opacity: 0.15;
-	// }	
+	// }
 
+	a {
+		color: $white;
+	}
+}
+
+.codePen--cheeserank {
+	background-image: url('app/img/cheeseRank.jpg')
 }
 
 .codePen-content {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+	
+}
+
+.codePen-header {
+
+}
+
+.codePen-description {
+	
 }
 
 .codePen-overlay {
@@ -34,6 +48,10 @@
     height: 100%;
     padding: 1rem;
 	background: rgba(75,75,75,0.8);
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-description {

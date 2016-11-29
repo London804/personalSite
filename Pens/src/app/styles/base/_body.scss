@@ -14,13 +14,6 @@ body {
   @include selection;
 }
 
-a {
-  &:hover {
-    text-decoration: none;
-    color: black;
-  }
-}
-
 .wrapper {
   min-height:100%;
   position:relative;
