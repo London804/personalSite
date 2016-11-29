@@ -5,7 +5,7 @@
 }
 
 .codePen{
-    @include transition;
+    @include smooth;
     @include filter;
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
@@ -16,29 +16,27 @@
     background-size: cover;
     min-height: 320px;
 
-	// img {
-	// 	opacity: 0.15;
-	// }
-
 	a {
 		color: $white;
 	}
 }
 
 .codePen--cheeserank {
-	background-image: url('app/img/cheeseRank.jpg')
+	background-image: url('app/img/cheeseRank.jpg');
 }
 
-.codePen-content {
-	
+.codePen--budweiser {
+	background-image: url('app/img/budweiserMusic.png');
 }
 
-.codePen-header {
-
+.codePen--spotify {
+	background-image: url('app/img/spotifyUIWinter2016.png');
 }
 
 .codePen-description {
-	
+	@include smooth;
+	transform: translate(0px, 160px);
+	opacity: 0;
 }
 
 .codePen-overlay {
@@ -50,12 +48,15 @@
 	background: rgba(75,75,75,0.8);
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
 
-.product-description {
-	display: none;
+    &:hover {
+    	.codePen-description {
+			transform: translate(0px, 110px);
+			opacity: 1;
+		}
+    }
 }
 
 .img-responsive {  
