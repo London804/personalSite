@@ -1,22 +1,38 @@
 @import '../styles/base/base';
 
 .content {
-	padding: 3.375rem 0.9375rem 0;
+	padding: 7.8125rem 0.625rem 0;
 }
 
 .codePen{
-    @include filter;
     @include transition;
+    display: flex;
+	flex-direction: column;
 	position: relative;
-	padding: 2rem;
-	
+	font-family: 'Open Sans', sans-serif;
+	color: $white;
+	border: 1px solid $black;
 
 	img {
-		position: absolute;
-		top: 0;
-		border: 1px solid $black;
-	}
-	
+		opacity: 0.15;
+	}	
+
+}
+
+.codePen-content {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.codePen-overlay {
+	position: absolute;
+    top: 0;
+	width: 100%;
+    height: 100%;
+    padding: 1rem;
+	background: rgba(75,75,75,0.9);
 }
 
 .product-description {

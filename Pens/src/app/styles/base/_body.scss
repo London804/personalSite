@@ -1,9 +1,10 @@
 @import '../variables/font';
 @import '../variables/colors';
 
-html {
-  font-size: 16px;
-}
+// html {
+//   font-size: 16px;
+// }
+
 html, body, #container { height: 100%; } //for footer
 body > #container { height: auto; min-height: 100%; } //for footer
 
