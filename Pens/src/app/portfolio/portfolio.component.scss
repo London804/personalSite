@@ -1,3 +1,30 @@
+@import '../styles/base/base';
+
+.content {
+	padding: 3.375rem 0.9375rem 0;
+}
+
+.codePen{
+    @include filter;
+    @include transition;
+	position: relative;
+	padding: 2rem;
+	
+
+	img {
+		position: absolute;
+		top: 0;
+		border: 1px solid $black;
+	}
+	
+}
+
 .product-description {
 	display: none;
+}
+
+.img-responsive {  
+	display: block;  
+	height: auto;  
+	max-width: 100%; 
 }
