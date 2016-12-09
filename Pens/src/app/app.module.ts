@@ -7,16 +7,13 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './SpotifyUI/sidebar/sidebar.component';
-import { SearchbarComponent } from './SpotifyUI/searchbar/searchbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    HomeComponent,
-    SidebarComponent,
-    SearchbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
