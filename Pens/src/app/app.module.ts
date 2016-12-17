@@ -7,13 +7,17 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
