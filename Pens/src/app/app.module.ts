@@ -9,6 +9,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlaylistBarComponent } from './spotify-ui/playlist-bar/playlist-bar.component';
+import { SpotifyUIComponent } from './spotify-ui/spotify-ui.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioComponent,
     HomeComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    PlaylistBarComponent,
+    SpotifyUIComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
-      { path: 'portfolio', component: PortfolioComponent}
+      { path: 'portfolio', component: PortfolioComponent},
+      { path: 'spotify', component: SpotifyUIComponent}
     ])
   ],
   providers: [],
