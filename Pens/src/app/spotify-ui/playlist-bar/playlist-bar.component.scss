@@ -1,6 +1,13 @@
 @import '../../styles/base/base';
 
-body {
+.playlist {
+	width: 12.5rem;
+	color: $grey;
 	background: $spotifyBlack;
 	font-family: $spotifyFallBackFont;
+
+	ul, li, h6 {
+		color: inherit;
+	}
 }
+
