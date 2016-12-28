@@ -1,12 +1,17 @@
 @import '../../styles/base/base';
-
 .playlist {
-	width: 12.5rem;
-	padding: 1.25rem 1.25rem 0.625rem;
 	color: $grey;
 	background: lighten($black, 8%);
 	font-family: $spotifyFallBackFont;
 	cursor: default;
+	max-height: 100%;
+}
+
+.playlist-content {
+	width: 12.5rem;
+	padding: 1.25rem 1.25rem 0.625rem;
+	overflow-y: auto;
+	max-height: 10000px;
 
 	ul, li, h6 {
 		color: inherit;
@@ -50,3 +55,18 @@
 	letter-spacing: 0.6px;
 }
 
+.playlist-newPlaylist {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 12.5rem;
+	height: 3.75rem;
+	padding-left: 1.875rem;
+	background: lighten($black, 8%);
+	transition: $transition-spotify;
+
+	&:hover {
+		color: $white;
+	}
+}

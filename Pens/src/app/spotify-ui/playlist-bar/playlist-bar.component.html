@@ -1,25 +1,31 @@
 <section class="playlist">
-	<ul class="playlist-browse">
-	  <li>Browse</li>
-	  <li>Radio</li>
-	</ul>
-
-	<div class="playlist-yourMusic">
-		<h6 class="playlist-title">Your music</h6>
-		<ul>
-			<li>Your Daily Mix</li>
-			<li>Songs</li>
-			<li>Albums</li>
-			<li>Artists</li>
-			<li>Stations</li>
-			<li>Local Files</li>
+	<div class="playlist-content">
+		<ul class="playlist-browse">
+		  <li>Browse</li>
+		  <li>Radio</li>
 		</ul>
+
+		<div class="playlist-yourMusic">
+			<h6 class="playlist-title">Your music</h6>
+			<ul>
+				<li>Your Daily Mix</li>
+				<li>Songs</li>
+				<li>Albums</li>
+				<li>Artists</li>
+				<li>Stations</li>
+				<li>Local Files</li>
+			</ul>
+		</div>
+
+		<div class="playlist-playlists">
+			<h6 class="playlist-title">Playlists</h6>
+			<ul>
+				<li *ngFor="let playlist of playlists">{{playlist.name}}</li>
+			</ul>
+		</div>
 	</div>
-
-	<div class="playlist-playlists">
-		<h6 class="playlist-title">Playlists</h6>
-		<ul>
-			<li *ngFor="let playlist of playlists">{{playlist.name}}</li>
-		</ul>
+	<div class="playlist-newPlaylist">
+		<span>+</span>
+		<p>New Playlist</p>
 	</div>
 </section>
