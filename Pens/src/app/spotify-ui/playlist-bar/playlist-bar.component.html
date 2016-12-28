@@ -4,18 +4,22 @@
 	  <li>Radio</li>
 	</ul>
 
-		<h6 class="t-caps">Your music</h6>
-	<ul>
-		<li>Your Daily Mix</li>
-		<li>Songs</li>
-		<li>Albums</li>
-		<li>Artists></li>
-		<li>Stations</li>
-		<li>Local Files</li>
-	</ul>
+	<div class="playlist-yourMusic">
+		<h6 class="playlist-title">Your music</h6>
+		<ul>
+			<li>Your Daily Mix</li>
+			<li>Songs</li>
+			<li>Albums</li>
+			<li>Artists</li>
+			<li>Stations</li>
+			<li>Local Files</li>
+		</ul>
+	</div>
 
-		<h6 class="t-caps">Playlists</h6>
-	<ul>
-		<li *ngFor="let playlist of playlists">{{playlist.name}}</li>
-	</ul>
+	<div class="playlist-playlists">
+		<h6 class="playlist-title">Playlists</h6>
+		<ul>
+			<li *ngFor="let playlist of playlists">{{playlist.name}}</li>
+		</ul>
+	</div>
 </section>

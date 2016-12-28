@@ -2,12 +2,51 @@
 
 .playlist {
 	width: 12.5rem;
+	padding: 1.25rem 1.25rem 0.625rem;
 	color: $grey;
-	background: $spotifyBlack;
+	background: lighten($black, 8%);
 	font-family: $spotifyFallBackFont;
+	cursor: default;
 
 	ul, li, h6 {
 		color: inherit;
 	}
+
+
+	li {
+		height: 2rem;
+		padding-top: 1rem;
+		font-size: 87.5%;
+		transition: $transition-spotify;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.playlist-browse,
+.playlist-yourMusic {
+	li {
+		font-weight: $medium;
+	}
+}
+
+.playlist-yourMusic,
+.playlist-playlists {
+	margin-top: 2.5rem;
+
+}
+
+.playlist-playlists {
+	li {
+		@include ellipsis(10rem);
+	}
+}
+
+.playlist-title {
+	font-size: 75%;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
 }
 

@@ -90,7 +90,8 @@ export class PlaylistBarComponent implements OnInit {
 	    {name: 'Solomon Grey – Selected Works (Music From the casual vacancy)'},
 	    {name: 'Various Artists – Toolroom Ibiza 2015'},
 	    {name: 'Axel Thesleff – The Hollow Men'},
-	    {name: 'Mileyface –Feeling Groovy: For smoke sessions only'}
+	    {name: 'Mileyface – Feeling Groovy: For smoke sessions only'},
+	    {name: 'Daft Punk – TRON: Legacy'}
 
 	]
 
