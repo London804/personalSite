@@ -81,4 +81,21 @@
 		border: 1px solid $grey;
 		border-radius: 1.4375rem;
 	}
+
+	.cross {
+	  	height: 13px;
+    	position: relative;
+    	width: 1px;
+    	left: -24px;
+
+		&:after {
+		  	content: "";
+		  	background: $grey;
+		    height: 1px;
+    		left: -7px;
+    		position: absolute;
+    		top: 5px;
+    		width: 14px;
+		}
+	}
 }
