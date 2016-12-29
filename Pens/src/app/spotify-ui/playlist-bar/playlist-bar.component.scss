@@ -71,10 +71,25 @@
 	transition: $transition-spotify;
 
 	&:hover {
-		color: $white;
+		p {
+			color: $white;
+		}
+
+		.playlist-add {
+			border-color: $white;
+		}
+
+		.playlist-cross {
+			background: $white;
+
+			&:after {
+				background: $white;
+			}
+		}
+
 	}
 
-	span {
+	.playlist-add {
 		width: 1.4375rem;
 		height: 1.4375rem;
 		margin-right: 0.75rem;
@@ -82,20 +97,21 @@
 		border-radius: 1.4375rem;
 	}
 
-	.cross {
-	  	height: 13px;
+	.playlist-cross {
     	position: relative;
+	  	height: 13px;
     	width: 1px;
     	left: -24px;
+    	background: $grey;
 
 		&:after {
 		  	content: "";
 		  	background: $grey;
 		    height: 1px;
-    		left: -7px;
+    		left: -6px;
     		position: absolute;
-    		top: 5px;
-    		width: 14px;
+    		top: 6px;
+    		width: 13px;
 		}
 	}
 }
