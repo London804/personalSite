@@ -11,7 +11,7 @@
 
 .playlist-content {
 	width: 12.5rem;
-	padding: 1.25rem 1.25rem 0.625rem;
+	padding: 0.3125rem 1.25rem 0.625rem;
 	overflow-y: auto;
 	max-height: 100vh;
 	padding-bottom: 4.375rem;
@@ -23,7 +23,7 @@
 
 	li {
 		height: 2rem;
-		padding-top: 1rem;
+		padding-top: 0.75rem;
 		font-size: 87.5%;
 		transition: $transition-spotify;
 
@@ -43,7 +43,7 @@
 
 .playlist-yourMusic,
 .playlist-playlists {
-	margin-top: 2.5rem;
+	margin-top: 2rem;
 
 }
 
@@ -68,8 +68,8 @@
 	height: 3.75rem;
 	padding-left: 1.25rem;
 	background: lighten($black, 8%);
-	border-top: 1px solid $gray-10;
-	border-bottom: 1px solid $gray-10;
+	border-top: 1px solid $borderGrey;
+	border-bottom: 1px solid $borderGrey;
 	transition: $transition-spotify;
 
 	&:hover {
