@@ -4,7 +4,8 @@
 	height: 100vh;
 	color: $grey;
 	background: lighten($black, 8%);
-	font-family: $spotifyFallBackFont;
+	font-family: $Circular;
+	font-weight: $regular;
 	cursor: default;
 }
 
@@ -32,10 +33,11 @@
 	}
 }
 
+
 .playlist-browse,
 .playlist-yourMusic {
 	li {
-		font-weight: $medium;
+		font-weight: $heavy;
 	}
 }
 
@@ -54,7 +56,7 @@
 .playlist-title {
 	font-size: 75%;
 	text-transform: uppercase;
-	letter-spacing: 0.6px;
+	letter-spacing: 1.2px;
 }
 
 .playlist-newPlaylist {
