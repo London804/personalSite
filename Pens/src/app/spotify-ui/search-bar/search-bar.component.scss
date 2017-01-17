@@ -3,6 +3,7 @@
 .search-bar {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	height: 3.125rem;
 	padding: 0.5rem;
 	background: $playlistBackground;
@@ -59,6 +60,15 @@
 		border-radius: 50px;
 		width: 14.5rem;
 		height: 1.125rem;
+	}
+}
+
+.stoop {
+	display: flex;
+	img {
+		width: 1.875rem;
+		height: 1.875rem;
+		border-radius: 50%;
 	}
 }
 
