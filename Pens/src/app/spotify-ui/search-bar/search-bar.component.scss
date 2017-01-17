@@ -1,0 +1,31 @@
+@import '../../styles/base/base';
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	height: 3.125rem;
+	padding: 0.5rem;
+	background: $playlistBackground;
+}
+
+.mac-controls {
+	.mac-controlsButton {
+		display: inline-block;
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 50%;
+		margin-left: 0.3125rem;
+	}
+
+	.mc--exit {
+		background: $macRed;
+	}
+
+	.mc--minimize {
+		background: $macYellow;
+	}
+
+	.mc--expand {
+		background: $macGreen;
+	}
+}
