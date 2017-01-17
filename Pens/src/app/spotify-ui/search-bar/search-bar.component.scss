@@ -9,6 +9,8 @@
 }
 
 .mac-controls {
+	margin-right: 1.5rem;
+
 	.mac-controlsButton {
 		display: inline-block;
 		width: 0.75rem;
@@ -29,3 +31,34 @@
 		background: $macGreen;
 	}
 }
+
+.icono {
+	color: $grey;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.icono + .icono {
+	margin-left: 1.7rem;
+	cursor: pointer;
+}
+
+.icono-caretDown:after, .icono-caretDown:before,
+.icono-caretLeft:after, .icono-caretLeft:before,
+.icono-caretRight:after, .icono-caretRight:before, {
+	width: 11px;
+}
+
+
+.search {
+	margin-left: 1.5rem;
+
+	input {
+		border-radius: 50px;
+		width: 14.5rem;
+		height: 1.125rem;
+	}
+}
+
