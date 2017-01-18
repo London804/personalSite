@@ -45,7 +45,12 @@
 	}
 }
 
-.icono + .icono {
+[class^='ion'], [class*='ion'] {
+	font-size: 1.5rem;
+
+}
+[class^='ion'] + [class^='ion'],
+[class*='ion'] + [class*='ion'] {
 	margin-left: 1.7rem;
 	cursor: pointer;
 }
@@ -58,25 +63,25 @@
 
 
 .search {
-	margin-left: 1.5rem;
+	margin-left: 1.625rem;
 
 	input {
 		border-radius: 50px;
-		width: 14.5rem;
+		width: 14.75rem;
 		height: 1.125rem;
 	}
 }
 
 .user-settings{
-	width: 14.0625rem;
+	width: 13.125rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-right: 1.5rem;
+	margin-right: 1.25rem;
 
 	img {
-		width: 1.875rem;
-		height: 1.875rem;
+		width: 1.75rem;
+		height: 1.75rem;
 		border-radius: 50%;
 		margin-right: 5px;
 	}
