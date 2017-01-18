@@ -36,7 +36,8 @@
 	}
 }
 
-.icono {
+[class^='ion'], [class*='ion'] {
+	font-size: 1.5rem;
 	color: $grey;
 	transition: $transition-spotify;
 
@@ -45,31 +46,47 @@
 	}
 }
 
-[class^='ion'], [class*='ion'] {
-	font-size: 1.5rem;
-
-}
 [class^='ion'] + [class^='ion'],
 [class*='ion'] + [class*='ion'] {
 	margin-left: 1.7rem;
-	cursor: pointer;
 }
-
-.icono-caretDown:after, .icono-caretDown:before,
-.icono-caretLeft:after, .icono-caretLeft:before,
-.icono-caretRight:after, .icono-caretRight:before, {
-	width: 11px;
-}
-
 
 .search {
+	position: relative;
 	margin-left: 1.625rem;
 
 	input {
+		width: 15rem;
+		height: 1.5rem;
+		padding-left: 1.5625rem;
+		font-size: 0.8125rem;
 		border-radius: 50px;
-		width: 14.75rem;
-		height: 1.125rem;
+
+		&:focus {
+			outline: none;
+		}
 	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $gray-10;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: $gray-10;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: $gray-10;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: $gray-10;
+	}
+}
+
+.ion-ios-search-strong {
+	position: absolute;
+	top: 0.25rem;
+	left: 0.4375rem;
+	font-size: 1.25rem;
+	color: $gray-10;
 }
 
 .user-settings{
@@ -85,5 +102,10 @@
 		border-radius: 50%;
 		margin-right: 5px;
 	}
-}
 
+	.user-name {
+		&:hover {
+			color: $white;
+		}
+	}
+}
