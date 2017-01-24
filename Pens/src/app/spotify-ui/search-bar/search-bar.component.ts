@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
+	name: string
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
+  	ngOnInit() {
+  		this.name ="Alex Chaparro"
   }
 
 }

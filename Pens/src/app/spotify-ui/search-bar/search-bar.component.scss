@@ -79,7 +79,24 @@
 	:-moz-placeholder { /* Firefox 18- */
 	  color: $gray-10;
 	}
+
+	::-webkit-search-cancel-button {
+	    position:relative;
+	    right: 2px;
+	    // scss for custom x button
+		// -webkit-appearance: none;
+	}
+
+	// &:after {
+	//     content: "x";
+	//     font-size: 1rem;
+	//     color: $grey;
+	//     position: relative;
+	//     right: 20px;
+	// }
 }
+
+
 
 .ion-ios-search-strong {
 	position: absolute;
@@ -109,3 +126,5 @@
 		}
 	}
 }
+
+
