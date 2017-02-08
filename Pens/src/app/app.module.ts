@@ -13,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PlaylistBarComponent } from './spotify-ui/playlist-bar/playlist-bar.component';
 import { SpotifyUIComponent } from './spotify-ui/spotify-ui.component';
 import { SearchBarComponent } from './spotify-ui/search-bar/search-bar.component';
-import { PlayBarComponent } from './play-bar/play-bar.component';
+import { PlayBarComponent } from './spotify-ui/play-bar/play-bar.component';
 
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlaylistBarComponent} from './playlist-bar/playlist-bar.component';
+import { PlayBarComponent } from './play-bar/play-bar.component';
 
 @Component({
   selector: 'app-spotify-ui',

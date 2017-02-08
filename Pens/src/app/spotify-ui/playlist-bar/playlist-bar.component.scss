@@ -1,7 +1,8 @@
 @import '../../styles/base/base';
+
 .playlist {
 	width: 12.5rem;
-	height: 100vh;
+	// height: 100vh;
 	color: $grey;
 	background: $playlistBackground;
 	font-family: $Circular;
@@ -62,7 +63,7 @@
 .playlist-newPlaylist {
 	display: flex;
 	align-items: center;
-	position: fixed;
+	// position: fixed;
 	bottom: 0;
 	width: 12.5rem;
 	height: 3.75rem;
