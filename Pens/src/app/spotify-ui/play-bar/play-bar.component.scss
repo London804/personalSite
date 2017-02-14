@@ -1,6 +1,9 @@
 @import '../../styles/base/base';
 
 .player {
+	position: fixed;
 	height: 80px;
+	width: 100%;
+	bottom: 0px;
 	background: $borderGrey;
 }
