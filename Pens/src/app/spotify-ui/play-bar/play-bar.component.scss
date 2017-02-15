@@ -2,8 +2,27 @@
 
 .player {
 	position: fixed;
-	height: 80px;
+	height: 5.5rem;
 	width: 100%;
+	padding: 0.8125rem;
 	bottom: 0px;
 	background: $borderGrey;
+	font-family: $Circular;
+}
+
+.player-album {
+	display: flex;
+	align-items: center;
+}
+
+.player-albumTitle {
+	margin-left: 0.5rem;
+
+	p {
+		color: $white;
+	}
+
+	p3 {
+		color: $grey;
+	}
 }
