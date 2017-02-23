@@ -15,7 +15,6 @@
 .player-album {
 	display: flex;
 	align-items: center;
-	width: 25%;
 }
 
 .player-albumTitle {
@@ -38,7 +37,6 @@
 
 .player-controls {
 	display: flex;
-	width: 50%;
 }
 
 .player-controls {
@@ -62,8 +60,44 @@
 	}
 }
 
-.current-track__progress__bar {
-	width: 100%;
-    padding: 0 15px;
+.player-secondaryControls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	[class^='ion'], [class*='ion'] {
+		font-size: 1.5rem;
+		color: $grey;
+		margin-left: 1.5rem;
+		transition: $transition-spotify;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.ion-ios-list-outline {
+		font-size: 1.25rem;
+	}
+}
+
+// .current-track__progress__bar {
+// 	width: 100%;
+//     padding: 0 15px;
+// }
+
+@media (min-width: 768px) {
+	.player-album {
+		width: 25%;
+	}
+
+	.player-controls  {
+		width: 50%;
+	}
+
+	.player-secondaryControls {
+		width: 25%;
+	}
+
 }
 
