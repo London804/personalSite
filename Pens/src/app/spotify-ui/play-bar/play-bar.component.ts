@@ -1,4 +1,5 @@
 import { Component, OnInit,  NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NouisliderModule } from 'ng2-nouislider';
 
 @Component({
   selector: 'app-play-bar',
