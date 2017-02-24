@@ -17,8 +17,9 @@ export class PlayBarComponent implements OnInit {
   		event.target.innerWidth;
   		console.log(event.target.innerWidth);
 
-  		if(event.target.innerWidth === '800px') {
+  		if(event.target.innerWidth > '748px') {
   			// this.left = 800 - $(document).scrollLeft()
+  			// this.style.left = 800 - document.scrollLeft
   		}
 	}
 // $('.b').css({
