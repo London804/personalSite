@@ -13,4 +13,15 @@ export class PlayBarComponent implements OnInit {
   ngOnInit() {
   }
 
+	onResize(event) {
+  		event.target.innerWidth;
+  		console.log(event.target.innerWidth);
+
+  		if(event.target.innerWidth === '800px') {
+  			// this.left = 800 - $(document).scrollLeft()
+  		}
+	}
+// $('.b').css({
+//         'left': 400 - $(document).scrollLeft()
+//     });
 }
