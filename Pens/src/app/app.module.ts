@@ -16,6 +16,7 @@ import { PlaylistBarComponent } from './spotify-ui/playlist-bar/playlist-bar.com
 import { SpotifyUIComponent } from './spotify-ui/spotify-ui.component';
 import { SearchBarComponent } from './spotify-ui/search-bar/search-bar.component';
 import { PlayBarComponent } from './spotify-ui/play-bar/play-bar.component';
+import { FixedDirective } from './shared/directives/fixed.directive';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { PlayBarComponent } from './spotify-ui/play-bar/play-bar.component';
     PlaylistBarComponent,
     SpotifyUIComponent,
     SearchBarComponent,
-    PlayBarComponent
+    PlayBarComponent,
+    FixedDirective
   ],
   imports: [
     BrowserModule,
