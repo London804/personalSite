@@ -6,14 +6,17 @@ import { Directive, ElementRef } from '@angular/core';
 export class FixedDirective {
   constructor() {
   	console.log('this is working');
-
-  	event.target;
-  		console.log(event.target);
-
-  		// if(event.target > '748px') {
-  		// 	// this.left = 800 - $(document).scrollLeft()
-  		// 	// this.style.left = 800 - document.scrollLeft
-  		// }
+  	// this.onResize(event);
   }
+
+ //  	onResize(event) {
+ // 		event.target.innerWidth;
+
+ // 		if(event.target.innerWidth > '748px') {
+	// 	// this.left = 800 - $(document).scrollLeft()
+	// 	// this.style.left = 800 - document.scrollLeft
+	// 		console.log('you got small');
+	// 	}
+	// }
 
 }
